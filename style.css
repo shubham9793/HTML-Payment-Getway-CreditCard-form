@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    
+    /* background-color: dimgray; */
+    background-image: url(bg1.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: auto;
+    height: auto;
+
+}
+.checkout_from{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%,-50%);
+    max-width: 380px;
+    width: 100%;
+    background-color: rgba(225, 225, 225, 0.35);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+
+.card_number{
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 0;
+    text-align: center;
+}
+.card_number .input {
+    width: 100%;
+    text-align: center;
+}
+
+.card_grp{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.expiry_date .expiry_input {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.cvv .cvv_input{
+    width: 80px;
+    margin-right: 10px ;
+}
+
+.expiry_date,
+.cvv{
+    display: flex;
+    width: 48px;
+}
+
+.cvv{
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.cvv-img{
+    border: 2px solid #fff;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.cvv-img .img {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    padding: 10px 10px 5px;
+    border-radius: 3px;
+    top: -30px;
+    right: 15px;
+    background: #fff;
+    display: none;
+}
+
+.cvv-img .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.cvv-img:hover .img{
+    display: block;
+}
+
+.btn{
+    width: 100%;
+    background: #fff;
+    color:darkorange;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+::placeholder { 
+    color:darkorange;
+    
+  }
